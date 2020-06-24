@@ -1,0 +1,111 @@
+.container-desktop-footer-grey-fullwidth {
+    height: 734px;
+    display: flex;
+    justify-content: center;
+    .container-desktop-footer-grey-minwidth {
+        width: 1311px;
+        .footer-top {
+            height: 521px;
+            display: flex;
+            flex-direction: row;
+            margin-top: 81px;
+            border-bottom: 1px solid #CACACA;
+            .footer-top-left {
+                @include size(200px, 422px);
+                .lets-talk {
+                    height: 64px;
+                    margin-top: 40px;
+                    margin-bottom: 24px;
+                    color: $font_blue;
+                    font-family: Butler;
+                    font-size: 45px;
+                    font-weight: bold;
+                    letter-spacing: -0.3px;
+                    line-height: 64px;
+                    .we-can-help {
+                        height: 80px;
+                        color: #9B9B9B;
+                        font-family: $font;
+                        font-size: 16px;
+                        letter-spacing: 0;
+                        line-height: 24px;
+                        margin-bottom: 24px;
+                        .contact-us {
+                            width: 100px;
+                            color: white;
+                            padding: 10px;
+                            background-color: #FFFFFF;
+                            border: 2px solid $light_blue;
+                            border-radius: 20px;
+                            a {
+                                text-decoration: none;
+                                color: $light_blue;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-right {
+            display: flex;
+            flex-direction: row;
+            .services-list,
+            .cityes-list {
+                @include size(440px, 110px);
+                margin-left: 247px;
+                ul {
+                    li {
+                        font-family: $font;
+                        font-size: 16px;
+                        list-style: none;
+                        margin: 20px 0;
+                        a {
+                            text-decoration: none;
+                            color: $font_blue;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom {
+            height: 212px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $font_blue;
+            .footer-bottom-left {
+                @include size(100px, 205px);
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                a {
+                    color: $font_blue;
+                    text-decoration: none;
+                    &:last-of-type {
+                        margin-left: 20px;
+                    }
+                }
+            }
+            .footer-bottom-center {
+                @include size(18px, 663px);
+                color: $font_blue;
+                font-family: $font;
+                font-size: 12px;
+                letter-spacing: 0;
+                line-height: 18px;
+                text-align: center;
+            }
+            .footer-bottom-right {
+                @include size(100px, 300px);
+                color: $font_blue;
+                .icon-footer {
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
